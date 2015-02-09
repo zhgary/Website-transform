@@ -1,0 +1,75 @@
+#Displacement-framed
+{
+  height:100%;
+  width:100%;
+  overflow:scroll;
+}
+.Displacement-F-absolute
+{
+  position:fixed !important;
+}
+#Displacement-scrollspanner
+{
+  position:absolute;
+  background:none;
+  padding:0;
+  margin:0;
+  border:none;
+  top:0;
+  left:0;
+  height:0;
+  width:0;
+  opacity:0;
+  z-index:-9001;
+}
+#Displacement-Event
+{
+  position:fixed;
+  top:-1px;
+  left:-1px;
+  width:0;
+  height:0;
+  visibility:hidden;
+}
+body::-webkit-scrollbar
+{
+  width:0px;
+  height:0px;
+  display:none;
+}
+
+.Displacement-scrolltester
+{
+  padding:0;
+  margin:0;
+  border:none !important;
+  position:fixed;
+  top:-200px;
+  left:-200px;
+  visibility:hidden;
+  width:200px;
+  height:200px;
+  overflow:scroll;
+  opacity:0;
+  z-index:-9001;
+}
+.Displacement-scrolltester::-webkit-scrollbar
+{
+  width:0px;
+  height:0px;
+  display:none;
+}
+.Displacement-scrolltester::-webkit-scrollbar-track
+{
+  background:black;
+}
+.Displacement-scrolltester::-webkit-scrollbar-corner
+{
+  background:black;
+}
+
+.Displacement-snap-hidden
+{
+  pointer-events:none;
+  visibility:hidden;
+}
